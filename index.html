@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora basal</title>
-                                        CALCULADORA BASAL</head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1></h1>
-    <p></p>
-                                            <input type="number">
-    <button>CALCULAR</button>
-    <h2>70CC/h</h2>
-    <h2>m+m/2105cc/h</h2>
-    <h1></h1>
-    <ul>
-        <li>COMO SE CALCULA?</li>
-        <li>De 0 a 10kg se calcula 100cc por cada kg.</li>
-        <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg.</li>
-        <li>De 20kg para arriba, se suman 20cc por cada kilo adicional.</li>
-    </ul>
+    <div id="contenedor">
+        <div id="calculadora">
+            <div class="contenido">
+                <h1>Hidratación Basal</h1>
+                <p >Completa todos los datos</p>
+                <input min="0" id="peso" type="number" placeholder="Peso en kg" />
+                <p id="error">* Debe completar todos los datos</p>
+                <button id="boton-calcular">Calcular</button>
+                <p id="flu">71cc/h</p>
+                <p id="man">m+m/2 : 105cc/h</p>
+            </div>
+        </div>
+        <div id="detalle">
+            <h2 id="info">Por favor, ingrese el peso para elegir un metodo</h2>
+            <div id="hollyday">
+                <h2>Metodo Hollyday Saegar</h2>
+                <h3>¿Como se calcula?</h3>
+                <ul>
+                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                    <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
+                </ul>
+            </div>
+            <div id="superficie">
+                <h2>Metodo superficie Corporal</h2>
+                <h3>¿Como se calcula?</h3>
+                <ul>
+                    <li>Superficie corporal = ((peso*4)+7) / (peso+90)</li>
+                    <li>Este resultado se multiplica por 1500 o por 2000 para hallar el valor del volumen diario en cc.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
-
-
-
-
-
